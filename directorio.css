@@ -73,8 +73,9 @@ main .formulario form button{
     height: 40px;
     border: none;
     border-radius: 10px;
-    font-weight: bold;
+    font-weight:bold;
     color: #eee;
+    cursor: pointer;
 }
 
 main .formulario form #btnGuardar{
@@ -100,3 +101,108 @@ main .lista .listaAmigos{
     display: flex;
     flex-direction: column;
 }
+
+
+
+main .lista .listaAmigos div{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .lista .listaAmigos div p{
+    font-weight: bold;
+    color: black;
+}
+
+/* main .lista .listaAmigos div button */
+.muestraDetalles{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: lighter;
+    font-size: 15px;
+    color: white;
+    background-color: darkslateblue;
+    cursor: pointer;
+}
+
+.eliminarAmigo{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: lighter;
+    font-size: 15px;
+    color: white;
+    background-color: crimson;
+    cursor: pointer;
+}
+
+
+.detallesAmigo{
+    width: 400px;
+    height: 400px;
+    background-color: #eee;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 200px);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.detallesAmigo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.detallesAmigo h3{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.detallesAmigo p span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.detallesAmigo .btnCerrar{
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    background-color: darkslategray;
+    color: azure;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.detallesAmigo .ocultoCerrar{
+    display: none;
+}
+
+.oculto{
+    display: none;
+}
+
+.warning{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color:crimson;
+    padding-top: 20px;
+
+}
+
+.ocultowar{
+    display: none;
+}
+
+
