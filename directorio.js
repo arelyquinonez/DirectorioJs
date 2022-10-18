@@ -77,7 +77,7 @@ function showDetalles(tel){
         }
         
     });
-        detalles.innerHTML=`<img src" ${amigo.foto}" alt="">
+        detalles.innerHTML=`<img src"${amigo.foto}">
         <h3>${amigo.nombre}</h3>
         <p><span>Telefono:</span>${amigo.telefono}</p>
         <p><span>Correo:</span>${amigo.correo}</p>
