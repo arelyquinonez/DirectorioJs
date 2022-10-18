@@ -1,0 +1,102 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+header{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:cornflowerblue;
+}
+
+header h1{
+    font-size: 30px;
+    color: black;
+}
+
+main{
+    width: 100vw;
+    height: auto;
+    padding-top: 30px;
+}
+
+main .formulario{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .formulario h2{
+    margin-bottom: 30px;
+}
+
+main .formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+main .formulario form label{
+    width: 300px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+main .formulario form label input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 5px;
+    background-color: rgb(211, 208, 208);
+}
+
+main .formulario form div{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .formulario form button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #eee;
+}
+
+main .formulario form #btnGuardar{
+    background-color: green;
+}
+
+main .formulario form #btnCancelar{
+    background-color: red;
+}
+
+
+main .lista{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+main .lista .listaAmigos{
+    display: flex;
+    flex-direction: column;
+}
