@@ -63,13 +63,14 @@ function pintar(){
             });
             
         }
-
+        let eliminacion=document.getElementById("confirmarEliminacion");
         botones=document.getElementsByClassName("eliminarAmigo");
         for (let i= 0; i < botones.length; i++) {
             const element = botones[i];
             element.addEventListener("click",()=>{
-                amigos.splice(element.getAttribute("indice"),1);
-                pintar();
+                eliminacion.classList.remove("ocultoEliminacion");
+                // amigos.splice(element.getAttribute("indice"),1);
+                // pintar();
             });
         }
     }
