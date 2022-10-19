@@ -50,9 +50,9 @@ function pintar(){
     if(amigos.length>0)
     {
         lista.innerHTML="";
-        amigos.forEach((contacto)=>{
+        amigos.forEach((contacto, index)=>{
             let amigo=document.createElement("div");
-            amigo.innerHTML=`<p>${contacto.nombre}</p><button class="muestraDetalles"><input type="hidden" value="${contacto.telefono}"/> Detalles</button> <button class="eliminarAmigo"><input type="hidden"/> Eliminar</button>`;
+            amigo.innerHTML=`<p>${contacto.nombre}</p><button class="muestraDetalles"><input type="hidden" value="${contacto.telefono}"/> Detalles</button> <button class="eliminarAmigo" indice="${index}"> Eliminar</button>`;
             lista.appendChild(amigo);
         });
         let botones=document.getElementsByClassName("muestraDetalles");
@@ -62,6 +62,15 @@ function pintar(){
                 showDetalles(element.children[0].value);
             });
             
+        }
+
+        botones=document.getElementsByClassName("eliminarAmigo");
+        for (let i= 0; i < botones.length; i++) {
+            const element = botones[i];
+            element.addEventListener("click",()=>{
+                amigos.splice(element.getAttribute("indice"),1);
+                pintar();
+            });
         }
     }
     else{
