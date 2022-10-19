@@ -79,11 +79,11 @@ main .formulario form button{
 }
 
 main .formulario form #btnGuardar{
-    background-color: green;
+    background-color: darkgreen;
 }
 
 main .formulario form #btnCancelar{
-    background-color: red;
+    background-color: darkred;
 }
 
 
@@ -202,6 +202,49 @@ main .lista .listaAmigos div p{
 }
 
 .ocultowar{
+    display: none;
+}
+
+
+.confirmarEliminacion{
+    width: 400px;
+    height: 200px;
+    background-color: #eee;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 200px);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+.confirmarEliminacion p{
+    font-weight: bold;
+    font-size: 16px;
+}
+.btnSi{
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    background-color: darkgreen;
+    color: azure;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btnNo{
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    background-color: darkred;
+    color: azure;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ocultoEliminacion{
     display: none;
 }
 
