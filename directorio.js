@@ -63,14 +63,15 @@ function pintar(){
             });
             
         }
-        let eliminacion=document.getElementById("confirmarEliminacion");
+        // let eliminacion=document.getElementById("confirmarEliminacion");
         botones=document.getElementsByClassName("eliminarAmigo");
         for (let i= 0; i < botones.length; i++) {
             const element = botones[i];
             element.addEventListener("click",()=>{
-                eliminacion.classList.remove("ocultoEliminacion");
-                // amigos.splice(element.getAttribute("indice"),1);
-                // pintar();
+                // eliminacion.classList.remove("ocultoEliminacion");
+                
+                amigos.splice(element.getAttribute("indice"),1);
+                pintar();
             });
         }
     }
@@ -106,3 +107,13 @@ function cerrarDetalles(){
         event.preventDefault();
     })
 }
+
+
+// function noEliminar() {
+//     let btnNo=document.getElementsById("btnNo");
+
+//     btnNo.addEventListener("click",(event)=>{
+//         eliminacion.classList.add("ocultoEliminacion");
+//         event.preventDefault();
+//     })
+// }
